@@ -9,16 +9,16 @@ class PlaylistProvider extends ChangeNotifier {
     Song(
         songName: "Thankyou",
         artistName: "Dido",
-        albumImagePath: "dido.jpg",
-        audioPath: "dido.mp3"),
+        albumImagePath: "assets/image/dido.jpg",
+        audioPath: "assets/audio/dido.mp3"),
 
     //song 2
 
     Song(
         songName: "All the way up",
         artistName: "Fatjoe",
-        albumImagePath: "fatjoe.jpg",
-        audioPath: "fatjoe.mp3"),
+        albumImagePath: "assets/image/fatjoe.jpg",
+        audioPath: "assets/audio/fatjoe.mp3"),
   ];
 
   //current song playing index
