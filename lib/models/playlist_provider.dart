@@ -25,6 +25,33 @@ class PlaylistProvider extends ChangeNotifier {
   int? _currentSongIndex;
 
   /*
+  A U D I O  P L A Y E R
+  
+  */
+
+  //audio player
+
+  //durations
+  //constructor
+
+  //initially not playing
+
+  //play the song
+
+  //pause current song
+
+  //resume playing
+
+  //pause or resume
+
+  //seek to a specific position in the current song
+
+
+
+  
+   
+
+  /*
 
   Getters
 
@@ -41,4 +68,12 @@ class PlaylistProvider extends ChangeNotifier {
   setters
   
   */
+
+  set currentSongIndex(int? newIndex){
+    //update current song
+    _currentSongIndex = newIndex;
+
+    //update ui
+    notifyListeners();
+  }
 }
