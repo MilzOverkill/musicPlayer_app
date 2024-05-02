@@ -24,7 +24,6 @@ class SongPage extends StatelessWidget {
       final currentSong = playlist[value.currentSongIndex ?? 0];
 
       //return scaffold ui
-
       return Scaffold(
         backgroundColor: Theme.of(context).colorScheme.background,
         body: SafeArea(
@@ -37,7 +36,6 @@ class SongPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     //back button
-
                     IconButton(
                       onPressed: () => Navigator.pop(context),
                       icon: const Icon(Icons.arrow_back),
@@ -58,47 +56,46 @@ class SongPage extends StatelessWidget {
                 //album artwork
                 NeuBox(
                     child: Column(
-                  children: [
-                    //image
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: Image.asset(currentSong.albumImagePath),
-                    ),
+                      children: [
+                        //image
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.asset(currentSong.albumImagePath),
+                        ),
 
-                    //song and artist name and icon
-
-                    Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          //song and artist name
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                        //song and artist name and icon
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
-                                currentSong.songName,
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                ),
+                              //song and artist name
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    currentSong.songName,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                    ),
+                                  ),
+                                  Text(currentSong.artistName),
+                                ],
                               ),
-                              Text(currentSong.artistName),
+
+                              //heart icon
+                              const Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                              ),
                             ],
                           ),
+                        ),
 
-                          //heart icon
-                          const Icon(
-                            Icons.favorite,
-                            color: Colors.red,
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    // playback controls
-                  ],
-                )),
+                        // playback controls
+                      ],
+                    )),
 
                 const SizedBox(height: 25),
 
@@ -106,7 +103,7 @@ class SongPage extends StatelessWidget {
                 Column(
                   children: [
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 25.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 25.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -125,7 +122,6 @@ class SongPage extends StatelessWidget {
                       ),
                     ),
 
-                    
                     SliderTheme(
                       data: SliderTheme.of(context).copyWith(
                         thumbShape:

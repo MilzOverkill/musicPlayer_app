@@ -64,7 +64,8 @@ flutter:
   assets:
     - assets/audio/
     - assets/image/
-    - 
+    - assets/audio/dido.wav
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
