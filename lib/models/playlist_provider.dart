@@ -10,7 +10,7 @@ class PlaylistProvider extends ChangeNotifier {
     Song(
       songName: "Thankyou",
       artistName: "Dido",
-      albumImagePath: "assets/image/dido.jpg",
+      albumImagePath: "assets/image/dido.png",
       audioPath: "audio/dido.wav",
     ),
 
@@ -19,8 +19,80 @@ class PlaylistProvider extends ChangeNotifier {
     Song(
       songName: "All the way up",
       artistName: "Fatjoe",
-      albumImagePath: "assets/image/fatjoe.jpg",
+      albumImagePath: "assets/image/fatjoe.png",
       audioPath: "audio/fatjoe.wav",
+    ),
+
+    //song 3
+
+    Song(
+      songName: "Good Life",
+      artistName: "Ryan Mack",
+      albumImagePath: "assets/image/goodlife.png",
+      audioPath: "audio/goodlife.wav",
+    ),
+
+    //song 4
+
+    Song(
+      songName: "Happy",
+      artistName: "Kyle Hume",
+      albumImagePath: "assets/image/happy.png",
+      audioPath: "audio/happy.wav",
+    ),
+
+    //song 5
+
+    Song(
+      songName: "Happy - Despicable Me",
+      artistName: "Pharrell Williams",
+      albumImagePath: "assets/image/minions.png",
+      audioPath: "audio/minions.wav",
+    ),
+
+    //song 6
+
+    Song(
+      songName: "The One That You Call",
+      artistName: "Mackenzy Mackay",
+      albumImagePath: "assets/image/onecall.png",
+      audioPath: "audio/onecall.wav",
+    ),
+
+    //song 7
+
+    Song(
+      songName: "I Want It That Way",
+      artistName: "Backstreet Boys",
+      albumImagePath: "assets/image/iwantitthatway.png",
+      audioPath: "audio/iwantitthatway.wav",
+    ),
+
+    //song 8
+
+    Song(
+      songName: "Mamma Mia!",
+      artistName: "Random Australian Singer",
+      albumImagePath: "assets/image/mammamia.png",
+      audioPath: "audio/mammamia.wav",
+    ),
+
+    //song 9
+
+    Song(
+      songName: "Sweet Tooth",
+      artistName: "Ryan Mack",
+      albumImagePath: "assets/image/sweettooth.png",
+      audioPath: "audio/sweettooth.wav",
+    ),
+
+    //song 10
+
+    Song(
+      songName: "Country Roads",
+      artistName: "John Denver",
+      albumImagePath: "assets/image/countryroads.png",
+      audioPath: "audio/countryroads.wav",
     ),
   ];
 
